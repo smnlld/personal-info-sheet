@@ -1,12 +1,12 @@
 import Info from "./Info";
-const Infos = ({ infos}) => {
+const Infos = ({ info, onDelete}) => {
   return (
     <>
-      {infos.map((info) => (
-        <Info key={info.id} info={info}/>
+      {info.map((info) => (
+        <Info key={info.id} info={info} onDelete={onDelete}/>
       ))}
     </>
-  );
-};
+  )
+}
 
 export default Infos;
